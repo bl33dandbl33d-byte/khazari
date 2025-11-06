@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>2025 Art Catalogue | Khazari</title>
+
+<!-- English & French SEO Metadata -->
+<meta name="description" content="Explore Khazari's 2025 Art Catalogue: a curated trilogy of exquisite artworks for collectors of high-end art. Discover pieces that rival Hermes, Versace, and Chanel collectors' tastes.">
+<meta name="keywords" content="Khazari, Art Catalogue 2025, Luxury Art, High-End Collectors, Drawing, Restraint, Emotion, Hermes Art, Versace Art, Chanel Art, Contemporary Art, Fine Art, Art Collectors">
+<meta name="language" content="en, fr">
+<meta name="robots" content="index, follow">
+
+<meta name="description" lang="fr" content="Découvrez le catalogue d'art 2025 de Khazari : une trilogie soigneusement sélectionnée pour les collectionneurs d'œuvres d'art de luxe. Des pièces séduisant les amateurs d'Hermes, Versace et Chanel.">
+<meta name="keywords" lang="fr" content="Khazari, Catalogue d'Art 2025, Art de Luxe, Collectionneurs Haut de Gamme, Dessin, Rigueur, Emotion, Hermes Art, Versace Art, Chanel Art, Art Contemporain, Beaux-Arts, Collectionneurs d'Art">
+
+<!-- Open Graph -->
+<meta property="og:title" content="2025 Art Catalogue | Khazari" />
+<meta property="og:description" content="Explore Khazari's 2025 Art Catalogue: curated artworks for luxury collectors." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.khazari.com/catalogue.html" />
+<meta property="og:image" content="https://www.khazari.com/assets/khazari-logo.png" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="2025 Art Catalogue | Khazari" />
+<meta name="twitter:description" content="Explore Khazari's 2025 Art Catalogue: curated artworks for luxury collectors." />
+<meta name="twitter:image" content="https://www.khazari.com/assets/khazari-logo.png" />
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "url": "https://www.khazari.com",
+  "logo": "https://www.khazari.com/assets/khazari-logo.svg",
+  "name": "Khazari",
+  "sameAs": [
+    "https://x.com/KhazariOfficial"
+  ]
+}
+</script>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400&family=Playfair+Display:wght@300&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="styles-catalogue.css" />
+
+<style>
+/* Existing Styles ... no changes to layout */
+body {
+margin: 0;
+padding: 0;
+background-color: #fff;
+animation: fadeInBackground 2s ease-in-out;
+font-family: 'Helvetica Neue', sans-serif;
+color: #0A0A0A;
+text-align: center;
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+overflow-x: hidden;
+}
+
+@keyframes fadeInBackground {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+
+.catalogue-container {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 4rem;
+max-width: 1250px;
+margin: 0 auto;
+padding: 20vh 1rem 12rem 1rem;
+}
+
+.artwork {
+cursor: pointer;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.artwork:hover {
+transform: translateY(-4px);
+box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+.artwork img {
+border-radius: 6px;
+width: 100%;
+height: auto;
+object-fit: cover;
+transition: transform 0.3s ease;
+}
+
+.catalogue-large img {
+max-width: 1000px;
+aspect-ratio: 16 / 9.5;
+}
+
+.catalogue-row {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 3rem;
+width: 100%;
+}
+
+.catalogue-small img {
+max-width: 460px;
+aspect-ratio: 16 / 9.5;
+}
+
+.artwork-title {
+font-family: 'Helvetica Neue', sans-serif;
+font-size: 1rem;
+letter-spacing: 0.15em;
+text-transform: uppercase;
+font-weight: 400;
+margin-top: 0.8rem;
+color: #0A0A0A;
+}
+
+/* Whitewash */
+.whitewash {
+position: fixed;
+inset: 0;
+background: white;
+opacity: 0;
+pointer-events: none;
+transition: opacity 0.8s ease;
+z-index: 9999;
+}
+
+.whitewash.active {
+opacity: 1;
+pointer-events: all;
+}
+
+/* Khazari Logo */
+.khazari-logo {
+position: fixed;
+bottom: 30px;
+left: 50%;
+transform: translateX(-50%);
+width: 45px;
+height: 45px;
+cursor: pointer;
+transition: filter 0.4s ease, transform 0.3s ease;
+filter: brightness(0);
+z-index: 10000;
+}
+
+.khazari-logo:hover {
+filter: brightness(10);
+transform: translateX(-50%) scale(1.1);
+}
+</style>
+</head>
+
+<body>
+<main class="catalogue-container">
+<header style="text-align: center;">
+<h1 class="catalogue-heading">2025 ART CATALOGUE</h1>
+<p class="catalogue-description">
+Explore the complete trilogy of thematic catalogs chronicling the evolution of drawing, restraint, and emotion.
+</p>
+</header>
+
+<!-- CATALOGUE III (Large) -->
+<section class="artwork catalogue-large" onclick="openPDF('assets/CCIII.pdf')">
+<img src="assets/images/art3.png" alt="Catalogue III" />
+<h2 class="artwork-title">CATALOGUE III</h2>
+</section>
+
+<!-- CATALOGUE II + I (Smaller Row) -->
+<div class="catalogue-row">
+<section class="artwork catalogue-small" onclick="openPDF('assets/CCII.pdf')">
+<img src="assets/images/art2.png" alt="Catalogue II" />
+<h2 class="artwork-title">CATALOGUE II</h2>
+</section>
+
+<section class="artwork catalogue-small" onclick="openPDF('assets/CCI.pdf')">
+<img src="assets/images/art1.png" alt="Catalogue I" />
+<h2 class="artwork-title">CATALOGUE I</h2>
+</section>
+</div>
+</main>
+
+<!-- Whitewash overlay -->
+<div class="whitewash" id="whitewash"></div>
+
+<!-- Khazari Logo (fixed at bottom center) -->
+<img
+src="assets/logo.svg"
+class="khazari-logo"
+id="khazariLogo"
+alt="   "
+/>
+
+<script>
+const whitewash = document.getElementById('whitewash');
+const khazariLogo = document.getElementById('khazariLogo');
+
+// Ensure whitewash resets when coming back from external link
+window.addEventListener('pageshow', () => {
+whitewash.classList.remove('active');
+});
+
+// Open PDF with whitewash
+function openPDF(path) {
+whitewash.classList.add('active');
+setTimeout(() => { window.location.href = path; }, 800);
+}
+
+// Twitter click with whitewash
+khazariLogo.addEventListener('click', () => {
+whitewash.classList.add('active');
+setTimeout(() => {
+window.location.href = 'https://x.com/KhazariOfficial';
+}, 800);
+});
+</script>
+</body>
+</html>
